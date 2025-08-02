@@ -113,14 +113,14 @@ public class UserService {
         return userRepository.findByUsername(username);
     }
 
-    public boolean validateUserRole(String username, String requiredRole) {
-        Optional<User> userOpt = userRepository.findByUsername(username);
-        if (userOpt.isPresent()) {
-            User user = userOpt.get();
-            return user.getRole().equals(requiredRole);
-        }
-        return false;
-    }
+//    public boolean validateUserRole(String username, String requiredRole) {
+//        Optional<User> userOpt = userRepository.findByUsername(username);
+//        if (userOpt.isPresent()) {
+//            User user = userOpt.get();
+//            return user.getRole().equals(requiredRole);
+//        }
+//        return false;
+//    }
 
 
 
